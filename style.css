@@ -1,4 +1,3 @@
-/* Réinitialisation des styles */
 * {
   margin: 0;
   padding: 0;
@@ -36,21 +35,35 @@ nav {
   font-weight: bold;
 }
 
-nav ul {
+.nav-links {
   display: flex;
   list-style: none;
 }
 
-nav ul li {
+.nav-links li {
   margin-left: 20px;
 }
 
-nav ul li a {
+.nav-links li a {
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
   color: #c0a062;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Section héros */
@@ -136,4 +149,42 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+/* Styles pour les appareils mobiles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-links.active li {
+    margin: 10px 0;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
 }
