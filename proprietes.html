@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Homes</title>
+    <title>Luxury Homes - Propriétés</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <nav>
         <div class="logo">Luxury Homes</div>
         <ul class="nav-links">
-          <li><a href="#">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="proprietes.html">Propriétés</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">À propos</a></li>
@@ -26,39 +26,54 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>Découvrez le luxe ultime</h1>
-        <p>Explorez notre collection exclusive de propriétés de prestige.</p>
-        <a href="proprietes.html" class="btn">Voir les propriétés</a>
-      </section>
-
-      <section class="featured">
-        <h2>Propriétés en vedette</h2>
-        <div class="property-grid">
+      <section class="properties">
+        <h2>Nos propriétés de luxe</h2>
+        <div class="property-list">
           <div class="property">
             <img
               src="https://img.freepik.com/photos-gratuite/villa-luxe-piscine-design-contemporain-spectaculaire-art-numerique-immobilier-maison-maison-propriete-ge_1258-150765.jpg?w=1380&t=st=1716811477~exp=1716812077~hmac=b6d5adf8c3237f402dc3217fd746792fa94d7eb75e924ec62d36728ba445e092"
               alt="Propriété 1"
             />
-            <h3>Villa de luxe à Cannes</h3>
-            <p>Prix : 5 000 000 €</p>
+            <div class="property-details">
+              <h3>Villa de luxe à Cannes</h3>
+              <p>Prix : 5 000 000 €</p>
+              <p>Type : Villa</p>
+              <p>Superficie : 500 m²</p>
+              <p>Chambres : 5</p>
+              <p>Salles de bain : 4</p>
+            </div>
           </div>
           <div class="property">
             <img
               src="https://img.freepik.com/photos-gratuite/villa-luxe-piscine-design-contemporain-spectaculaire-art-numerique-immobilier-maison-maison-propriete-ge_1258-150749.jpg?size=626&ext=jpg&ga=GA1.1.433959757.1716811461&semt=ais_user"
               alt="Propriété 2"
             />
-            <h3>Penthouse à New York</h3>
-            <p>Prix : 10 000 000 $</p>
+            <div class="property-details">
+              <h3>Penthouse à New York</h3>
+              <p>Prix : 10 000 000 $</p>
+              <p>Type : Appartement</p>
+              <p>Superficie : 300 m²</p>
+              <p>Chambres : 3</p>
+              <p>Salles de bain : 2</p>
+            </div>
           </div>
           <div class="property">
-            <img
-              src="https://img.freepik.com/photos-gratuite/belle-architecture-du-chateau_23-2150754974.jpg?t=st=1716811649~exp=1716815249~hmac=501fb055931872a89dcc02203219810ca9dce40c8c207c8dbdaea997ed8e7705&w=1380"
-              alt="Propriété 3"
-            />
-            <h3>Château en Provence</h3>
-            <p>Prix : 8 000 000 €</p>
+            <a href="chateau.html"
+              ><img
+                src="https://img.freepik.com/photos-gratuite/belle-architecture-du-chateau_23-2150754974.jpg?t=st=1716811649~exp=1716815249~hmac=501fb055931872a89dcc02203219810ca9dce40c8c207c8dbdaea997ed8e7705&w=1380"
+                alt="Propriété 2"
+              />
+            </a>
+            <div class="property-details">
+              <h3><a href="chateau.html">Château en Provence</a></h3>
+              <p>Prix : 8 000 000 $</p>
+              <p>Type : Maison</p>
+              <p>Superficie : 1 000 m²</p>
+              <p>Chambres : 10</p>
+              <p>Salles de bain : 8</p>
+            </div>
           </div>
+          <!-- Ajoutez ici d'autres propriétés -->
         </div>
       </section>
     </main>
